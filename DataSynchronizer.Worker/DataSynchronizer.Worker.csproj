@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>dotnet-DataSynchronizer.Worker-70A6FA37-8D67-49FB-A500-4C4DC113532C</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.6" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.1.0" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataSynchronizer.Aplication\DataSynchronizer.Aplication.csproj" />
+    <ProjectReference Include="..\DataSynchronizer.Infra\DataSynchronizer.Infra.csproj" />
+    <ProjectReference Include="..\RabbitMQ\RabbitMQ.csproj" />
+  </ItemGroup>
+</Project>
